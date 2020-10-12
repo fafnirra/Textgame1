@@ -58,7 +58,7 @@ namespace Textgame1
             }
             Console.WriteLine("Тебе еще не надоело быть пидаром? \nСходи в церковь - 1, сходи к бабке - 2, никуда не ходи - 3.");
             int d = Convert.ToInt32(Console.ReadLine());
-            switch (с)
+            switch (d)
             {
                 case 1:
                     Console.WriteLine("На тебе твои копейки. " + (money + 15) + " денег");
@@ -72,8 +72,24 @@ namespace Textgame1
                 default:
                     Console.WriteLine("Чувак, у меня для тебя плохие новости. Ты очень тупой, потому что а) до сих пор в это играешь, бэ) ты так и не понял, куда жмакать.");
                     break;
-            } 
-
+            }
+            Console.WriteLine("Ты чёт мне надоел. Хочешь нахуй сходить? \nСходи - 1, сходи к бабке - 2, никуда не ходи - 3.");
+            int e = Convert.ToInt32(Console.ReadLine());
+            switch (e)
+            {
+                case 1:
+                    Console.WriteLine("На тебе твои копейки. " + (money + 15) + " денег");
+                    break;
+                case 2:
+                    Console.WriteLine("Поздравляю! Твоё очко принесло тебе " + (money + 1000) + " денег");
+                    break;
+                case 3:
+                    Console.WriteLine("Поздравляю, ты проебал все свои копейки, и в жопу тебя пьяного бесплатно выебали)))");
+                    break;
+                default:
+                    Console.WriteLine("Чувак, у меня для тебя плохие новости. Ты очень тупой, потому что а) до сих пор в это играешь, бэ) ты так и не понял, куда жмакать.");
+                    break;
+            }
 
         }
     }
